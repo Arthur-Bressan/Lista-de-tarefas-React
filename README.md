@@ -23,7 +23,6 @@ Uma aplicação simples de lista de tarefas construída com **React**. Este proj
 - [React Icons](https://react-icons.github.io/react-icons/)
 - CSS puro
 
-
 ## 🧠 Aprendizados
 
 Durante o desenvolvimento deste projeto, aprendi a:
@@ -51,4 +50,4 @@ npm start
 
 1. Este projeto está sob a licença MIT.
 
-Feito com 💻 por Arthur Bressan
+Feito por Arthur Bressan
