@@ -4,12 +4,14 @@ import "../components/Main.css";
 
 import Form from "./Form";
 import Tarefas from "./Tarefas";
+import Dialog from "./Dialog";
 
 export default class Main extends Component {
   state = {
     novaTarefa: "",
     tarefas: [],
     index: -1,
+    showDialog: false,
   };
 
   componentDidMount() {
@@ -59,6 +61,8 @@ export default class Main extends Component {
         novaTarefa: "",
       });
     }
+
+    this.setState({ showDialog: false });
   };
 
   handleChange = (e) => {
@@ -73,6 +77,15 @@ export default class Main extends Component {
     this.setState({
       index,
       novaTarefa: tarefas[index],
+      showDialog: true,
+    });
+  };
+
+  handleCancel = () => {
+    this.setState({
+      showDialog: false,
+      novaTarefa: "",
+      index: -1,
     });
   };
 
@@ -106,6 +119,14 @@ export default class Main extends Component {
           handleSubmit={this.handleSubmit}
           novaTarefa={novaTarefa}
           index={this.state.index}
+        />
+
+        <Dialog
+          show={this.state.showDialog}
+          novaTarefa={novaTarefa}
+          handleChange={this.handleChange}
+          handleCancel={this.handleCancel}
+          handleSubmit={this.handleSubmit}
         />
       </div>
     );
