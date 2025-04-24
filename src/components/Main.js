@@ -19,9 +19,6 @@ export default class Main extends Component {
         tarefas: JSON.parse(tarefas),
       });
     }
-    this.setState({
-      tarefas: JSON.parse(tarefas),
-    });
   }
 
   componentDidUpdate(prevProps, prevState) {
