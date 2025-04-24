@@ -17,17 +17,17 @@
 }
 
 .dialog {
-  background-color: rgb(50, 50, 50);
+  background-color: #042940;
   border-radius: 8px;
   padding: 20px;
   width: 90%;
   max-width: 500px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px #042940;
 }
 
 .title {
   font-size: 24px;
-  color: white;
+  color: #3ca6a6;
   margin-bottom: 10px;
 }
 
@@ -38,11 +38,10 @@
 }
 
 .input {
-  background-color: rgb(70, 70, 70);
   border: none;
   border-radius: 4px;
   padding: 10px;
-  color: white;
+  color: #042940;
   font-size: 16px;
 }
 
@@ -55,14 +54,11 @@
 }
 
 .button-cancel {
-  background-color: rgb(255, 50, 50);
   font-size: 14px;
   font-weight: bold;
 }
 
 .button-confirm {
-  background-color: rgb(50, 255, 50);
   font-size: 14px;
   font-weight: bold;
-  color: black;
 }

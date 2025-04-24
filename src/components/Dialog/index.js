@@ -1,6 +1,8 @@
 import React from "react";
 import "./Dialog.css";
 
+import { FaEdit, FaWindowClose } from "react-icons/fa";
+
 export default function Dialog({
   show,
   novaTarefa,
@@ -28,10 +30,9 @@ export default function Dialog({
               type="button"
               onClick={handleCancel}
             >
-              Cancelar
+              <FaWindowClose className="icon" />
             </button>
-            <button className="button-confirm" type="submit">
-              Confirmar
+            <button className="button-confirm" type="submit"><FaEdit className="icon" />
             </button>
           </div>
         </form>
